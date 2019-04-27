@@ -88,7 +88,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class=" "><a href="index.html">Inicio</a></li>
-                    <li class=" ">
+                    <li class="active">
                         <a href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="dropdown">
@@ -112,7 +112,7 @@
                             <li><a href="consultareserva.html"> Ventas</a></li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li class="  ">
                         <a href="cartelera.html">Cartelera</a>
                     </li>
                 </ul>
@@ -122,83 +122,57 @@
         <!--container-->
     </div>
     <!--rev slider start-->
+
     <section class="container">
-        <div class="list-group" id="btnCartelera">
-            <button type="button" class="list-group-item list-group-item-action active">
-                Cartelera de Cine
-            </button>
+        <div class="form-group col-md-12">
+            <select class="form-control" id="idcine">
+            </select>
         </div>
-
-
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src=".\assets\images\peliculas\after.jpg" alt="...">
-                    <div class="caption">
-                        <h3>After - Aquí empieza todo</h3>
-                        <p>Cuenta la historia de Tessa Young quien cursa su primer año en la universidad. Acostumbrada a una vida estable y ordenada, su mundo cambia cuando conoce a Hardin Scott, un misterioso joven de oscuro pasado.</p>
-                        <p><a href="https://www.youtube.com/watch?v=BNLta4nDM10" class="btn btn-primary" role="button" target="_blank">Ver Trailer</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src=".\assets\images\peliculas\jack.jpg" alt="...">
-                    <div class="caption">
-                        <h3>La casa de Jack</h3>
-                        <p>EEUU, década de 1970. Seguimos al brillante Jack durante un período de 12 años, descubriendo los asesinatos que marcarán su evolución como asesino en serie. La historia se vive desde el punto de vista de Jack.</p>
-                        <p><a href="#" class="btn btn-primary" role="button" target="_blank">Ver Trailer</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src=".\assets\images\peliculas\familia.jpg" alt="...">
-                    <div class="caption">
-                        <h3>Luchando con mi familia</h3>
-                        <p>Un antiguo luchador (Dwayne Johnson) de lucha libre y su familia se ganan la vida actuando a lo largo del país, pero sus hijos sueñan con poder vivir del Wrestling.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Trailer</a></p>
-                    </div>
-                </div>
-            </div>
+    </section>
+    <section class="container">
+        <div class="form-group col-md-4">
+            <h2>Consulta de ventas</h2>
         </div>
-
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src=".\assets\images\peliculas\youtuber.jpg" alt="...">
-                    <div class="caption">
-                        <h3>Papá Youtuber</h3>
-                        <p>Un padre de familia poco afín a la tecnología es despedido por su nuevo jefe, un joven millenial. En la desesperación por no perder su casa y tras enterarse de que su esposa está embarazada, decide convertirse en Youtuber.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Trailer</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src=".\assets\images\peliculas\magico.jpg" alt="...">
-                    <div class="caption">
-                        <h3>Parque Mágico</h3>
-                        <p>June es una niña muy creativa que logra dar con un increíble parque de diversiones plagado de atracciones increíbles y animales parlanchines. El punto es que aunque inicialmente cree que este parque mágico fue abandonado.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Trailer</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src=".\assets\images\peliculas\amor.jpg" alt="...">
-                    <div class="caption">
-                        <h3>Un amor inquebrantable</h3>
-                        <p>Joyce Smith y su familia creían que lo habían perdido todo cuando su hijo adolescente John cayó en el helado lago Saint-Louis. En el hospital, John estuvo sin vida durante 60 minutos, pero Joyce no estaba dispuesta a renunciar por su hijo.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Ver Trailer</a></p>
-                    </div>
-                </div>
-            </div>
+    </section>
+    <section class="container">
+        <div class="form-group col-md-10">
+            <section class="container">
+                <div class="form-group col-md-10">
+                <h4>Lista detallada</h4>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col">Ruc</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Titular Tarjeta</th>
+                        <th scope="col">Fecha Pago</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody id="listareserva">
+                    </tbody>
+                </table>
+            </section>
+            <section class="container">
+                <div class="form-group col-md-7">
+                <h4>Resumen x Empresa</h4>
+                <table class="table table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col">Ruc</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody id="listareservacant">
+                    </tbody>
+                </table>
+            </section>
         </div>
-
-
+        <div class="form-group col-md-2">
+            <img src="assets/images/ventas.png" alt=" " class="img-responsive d-inline-block pull-left ">
+        </div>
     </section>
     <footer class="container-fluid " >
 
@@ -213,11 +187,7 @@
             </div>
         </div>
     </footer>
- 
- 
-    <!--default footer end here-->
-    <!--scripts and plugins -->
-    <!--must need plugin jquery-->
+
     <script src="assets/js/jquery.min.js "></script>
     <script src="assets/js/jquery-migrate.min.js "></script>
     <!--bootstrap js plugin-->
@@ -245,31 +215,53 @@
     <script type="text/javascript " src="assets/rs-plugin/js/jquery.themepunch.tools.min.js "></script>
     <script type="text/javascript " src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js "></script>
     <script type="text/javascript " src="assets/rs-plugin/videojs/video.js "></script>
-    <!-- Include only when working on Local system. Not required on server -->
-    <!-- <script type="text/javascript " src="assets/rs-plugin/js/extensions/revolution.extension.video.min.js "></script> -->
-    <!-- <script type="text/javascript " src="assets/rs-plugin/js/extensions/revolution.extension.slideanims.min.js "></script> -->
-    <!-- <script type="text/javascript " src="assets/rs-plugin/js/extensions/revolution.extension.navigation.min.js "></script> -->
-    <!-- <script type="text/javascript " src="assets/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js "></script>     -->
     <script type="text/javascript " src="assets/js/revolution-custom.js "></script>
-    <!-- Bootstrap Select (Dropdown Styling) -->
     <script src="assets/js/bootstrap-select.min.js " type="text/javascript "></script>
-    <!-- jQuery UI (Date Picker) -->
     <script src="assets/js/jquery-ui.min.js " type="text/javascript "></script>
-    <!--cube portfolio plugin-->
     <script src="assets/cubeportfolio/js/jquery.cubeportfolio.min.js " type="text/javascript "></script>
     <script src="assets/js/cube-portfolio.js " type="text/javascript "></script>
     <script src="assets/js/pace.min.js " type="text/javascript "></script>
 
     <script type="text/javascript">
         $( document ).ready(function() {
-            debugger;
-            ///listar Cartelera
-            $.get( "http://localhost:8080/api/peliculas", function(data){
 
-            }).fail(function( data ){
-                alert("Error");
+            ///llenar cine en el combo
+            $("#idcine").html('');
+            $.get( "http://localhost:8080/api/cines", function(data){
+                debugger;
+                $.each( data, function(index, value){
+                $("#idcine").append($('<option>', {
+                    value: value.idcine,
+                    text: value.nombre_cine
+                    }));
+                });
+                }).fail(function( data ){
+                    alert("Error");
+            });
+
+            $( "#idcine" ).change(function() {
+                debugger;
+                $("#listareserva").html('');
+                $("#listareservacant").html('');
+
+                $.get( "http://localhost:8080/api/consultareserva/"+$( "#idcine" ).val(), function(data){
+                    for(var i=0; i<data.length; i++){
+                        var tr = "<tr><td>"+data[i].ruc+"</td><td>"+data[i].nombre_empresa+"</td>"+
+                                  "<td>"+data[i].titular_tarjeta+"</td><td>"+data[i].fechapago+"</td>"+
+                                  "<td>"+data[i].precio_total+"</td></tr>";
+                        $("#listareserva").append(tr)
+                    }
+                });
+
+                $.get( "http://localhost:8080/api/consultaresumen/"+$( "#idcine" ).val(), function(data){
+                    for(var i=0; i<data.length; i++){
+                        var tr = "<tr><td>"+data[i].ruc+"</td><td>"+data[i].nombre_empresa+"</td>"+
+                                  "<td>"+data[i].cantidad+"</td><td>"+data[i].total+"</td></tr>";
+                        $("#listareservacant").append(tr)
+                    }
+                });
+            });
         });
-    });
     </script>
 </body>
 

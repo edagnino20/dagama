@@ -110,6 +110,12 @@
                         <li><a href="buscar_promocion.html"> Buscar Promociones</a></li>
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown">Consultas <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="consultareserva.html"> Ventas</a></li>
+                    </ul>
+                </li>
                 <li class="  ">
                     <a href="cartelera.html">Cartelera</a>
                 </li>
@@ -121,73 +127,68 @@
 </div>
 <!--rev slider start-->
 
-<section class="container">
 
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<section class="container">
+    <br>
     <div class="container">
-      
-           <div class="collapse navbar-collapse" id="navbarResponsive">
-       
-      </div>
+        <div class="form-group col-md-12">
+            <h1 class="my-4">Registro de Cine</h1>
+        </div>
     </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-        <h1 class="my-4">Registro de Cine</h1>
-      </div>
-      <div class="col-lg-9">
-        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
-                      <label for="txtrazonsocial">Razón Social</label>
-                      <input type="empresa" class="form-control" id="txtrazonsocial">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="txtdireccion">Dirección</label>
-                      <input type="direccion" class="form-control" id="txtdireccion">
-                    </div>
-                      <div class="form-group col-md-6">
-                          <label for="txtruc">RUC</label>
-                          <input type="ruc" class="form-control" id="txtruc">
-                      </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="txtcorreo">Correo</label>
-                      <input type="correo" class="form-control" id="txtcorreo">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="txtfono">Teléfono</label>
-                        <input type="fono" class="form-control" id="txtfono">
-                    </div>
-                  </div>
-                <button id="target" class="btn btn-primary" >Guardar</button>
-                <div class="col-md-3 ">
-                    <img src="assets/images/cine.jpg " alt=" " class="img-responsive d-inline-block pull-left ">
+</section>
+<section class="container">
+    <div class="form-group col-md-8">
+        <section class="container">
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="txtrazonsocial">Nombre Cine</label>
+                    <input type="empresa" class="form-control" id="txtrazonsocial">
                 </div>
             </div>
-      </div>
+        </section>
+        <section class="container">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="txtdireccion">Dirección</label>
+                    <input type="direccion" class="form-control" id="txtdireccion">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="txtruc">RUC</label>
+                    <input type="ruc" class="form-control" id="txtruc">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="txtcorreo">Correo</label>
+                    <input type="correo" class="form-control" id="txtcorreo">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="txtfono">Teléfono</label>
+                    <input type="fono" class="form-control" id="txtfono">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <button id="target" class="btn btn-primary" >Guardar</button>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
+    <div class="form-group col-md-4">
+        <img src="assets/images/cine.jpg " alt=" " class="img-responsive d-inline-block pull-left " hspace="40">
+    </div>
 </section>
+
 <footer class="container-fluid " >
-    <div class="row ">
-        <div class="col-md-12 text-center ">
-            <ul class="d-inline-block copyrigth ">
-                <li>Dagama Company</li>
-                <li>©Copyright 2019</li>
-                <!-- <li>Developed By Kreatico</li> -->
-            </ul>
-        </div>
+    <div class="col-md-12 text-center ">
+        <ul class="d-inline-block copyrigth ">
+            <li>Dagama Company</li>
+            <li>©Copyright 2019</li>
+        </ul>
     </div>
 </footer>
 
