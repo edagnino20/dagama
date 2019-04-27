@@ -4,40 +4,43 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
+import java.io.Serializable;
 
 @Entity
-public class Reserva {
+public class Reserva implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idreserva;
     private Long idempresa;
-    private String fecha;
+    private Long idcine;
+    private String fechapago;
     private Long idformapago;
     private String titular_tarjeta;
     private String numero_tarjeta;
     private String vencimiento_tarjeta;
-    private double precio_promocion;
-    private double precio_combo;
     private double precio_total;
-    private int estado;
+    private String respuesta;
 
-    public Reserva(){
-
+    public Reserva() {
     }
 
-    public Reserva(Long idreserva, Long idempresa, String fecha, Long idformapago, String titular_tarjeta, String numero_tarjeta, String vencimiento_tarjeta, double precio_promocion, double precio_combo, double precio_total, int estado) {
+    public Reserva(Long idreserva, Long idempresa, Long idcine, String fechapago, Long idformapago, String titular_tarjeta, String numero_tarjeta, String vencimiento_tarjeta, double precio_total, String respuesta) {
         this.idreserva = idreserva;
         this.idempresa = idempresa;
-        this.fecha = fecha;
+        this.idcine = idcine;
+        this.fechapago = fechapago;
         this.idformapago = idformapago;
         this.titular_tarjeta = titular_tarjeta;
         this.numero_tarjeta = numero_tarjeta;
         this.vencimiento_tarjeta = vencimiento_tarjeta;
-        this.precio_promocion = precio_promocion;
-        this.precio_combo = precio_combo;
         this.precio_total = precio_total;
-        this.estado = estado;
+        this.respuesta = respuesta;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public Long getIdreserva() {
@@ -56,12 +59,20 @@ public class Reserva {
         this.idempresa = idempresa;
     }
 
-    public String getFecha() {
-        return fecha;
+    public Long getIdcine() {
+        return idcine;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setIdcine(Long idcine) {
+        this.idcine = idcine;
+    }
+
+    public String getFechapago() {
+        return fechapago;
+    }
+
+    public void setFechapago(String fechapago) {
+        this.fechapago = fechapago;
     }
 
     public Long getIdformapago() {
@@ -96,22 +107,6 @@ public class Reserva {
         this.vencimiento_tarjeta = vencimiento_tarjeta;
     }
 
-    public double getPrecio_promocion() {
-        return precio_promocion;
-    }
-
-    public void setPrecio_promocion(double precio_promocion) {
-        this.precio_promocion = precio_promocion;
-    }
-
-    public double getPrecio_combo() {
-        return precio_combo;
-    }
-
-    public void setPrecio_combo(double precio_combo) {
-        this.precio_combo = precio_combo;
-    }
-
     public double getPrecio_total() {
         return precio_total;
     }
@@ -120,11 +115,11 @@ public class Reserva {
         this.precio_total = precio_total;
     }
 
-    public int getEstado() {
-        return estado;
+    public String getRespuesta() {
+        return respuesta;
     }
 
-    public void setEstado(int estado) {
-        this.estado = estado;
+    public void setRespuesta(String respuesta) {
+        this.respuesta = respuesta;
     }
 }
