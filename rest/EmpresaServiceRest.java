@@ -28,4 +28,6 @@ public class EmpresaServiceRest {
     public Empresa IngresarEmpresa(@RequestBody Empresa empresa) {
         return empresaNegocioService.registrar(empresa);
     }
+
+/*empresa*/
 }
