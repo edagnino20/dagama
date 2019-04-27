@@ -9,11 +9,6 @@ public interface PromocionRubroRepositorio extends CrudRepository<PromocionRubro
     @Query("SELECT a FROM PromocionRubro a WHERE a.idpromociorubro=:idpromociorubro")
     public PromocionRubro buscarPromocionRubro(@Param("idpromociorubro") Long idpromociorubro);
 
-    /*@Query("SELECT new com.dagama.cine.entidades.PromocionRubro (a.idpromociorubro, a.idpromocion, a.idrubro, " +
-            "a.porcentaje_descuento, a.estado, b.nombre_rubro ) FROM PromocionRubro a, Rubro b where a.idpromocion=:idpromocion and " +
-            "a.idrubro = b.idrubro")
-    public Iterable<PromocionRubro> obtenerReportePromocionRubro(@Param("idpromocion") Long idpromocion);*/
-
     @Query("SELECT new com.dagama.cine.entidades.PromocionRubro (a.idpromociorubro, a.idpromocion, a.idrubro, " +
             "a.porcentaje_descuento, a.estado ) FROM PromocionRubro a where a.idpromocion=:idpromocion")
     public Iterable<PromocionRubro> obtenerReportePromocionRubro(@Param("idpromocion") Long idpromocion);
