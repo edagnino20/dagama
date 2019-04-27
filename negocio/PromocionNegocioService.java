@@ -4,7 +4,6 @@ import com.dagama.cine.entidades.Promocion;
 import com.dagama.cine.repositorio.PromocionRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
